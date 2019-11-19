@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="css/main.css" /> -->
+    <!-- <link rel="icon" href="images/B.png" type="image/png" sizes="any" />  PUT IN LOGO -->
+    <title>Lina Dang-Nguyen</title>
+
+    <!-- Boostrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body style="background-color:#F7F3EC;" id="clearfix">
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg mb-3 forground">
+      <a class="navbar-brand mr-auto p-2 " href="#"
+        ><img src="logos/logo-02.png" width="8%"
+      /></a>
+
+      <div class="nav-item p-2 flex-row-reverse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >ABOUT <span class="sr-only">(current)</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="nav-item p-2 flex-row-reverse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >WORKS <span class="sr-only">(current)</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="nav-item p-2 flex-row-reverse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >CONTACT <span class="sr-only">(current)</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Front Page -->
+    <div class="front_page">
+      <div class="foreground greetings">
+        <h1 style="font-weight: bolder;">HI I'M LINA</h1>
+      </div>
+      <div class="foreground greetings_2">
+        <h2>I'M A&nbsp</h2>
+        <div class="fill_underline">WEB DEVELOPER</div>
+      </div>
+      <div class="background main_circle"></div>
+    </div>
+
+    <!-- About Me -->
+    <div class="about_me">
+      <div class="foreground about_heading"><h1>GET TO KNOW ME</h1></div>
+      <div class="foreground"><h3>MY MISSION</h3></div>
+      <div class="foreground mission_description">
+        <p>
+          I’m a front-developer that dreams to make ideas into reality. I’m
+          currently coding to my future at Simon Fraser University in the
+          Software Systems program. I have an interest in design and
+          programming, which allows me to create programs that are
+          human-centred. My goal is to ensure users are having fun while using
+          my programs! All the projects I've done so far focus on this goal.
+        </p>
+      </div>
+      <div class="foreground"><h3>WHAT I DO</h3></div>
+      <div class="whatIdo_description">
+        <p>
+          is simply dummy text of the printing and typesetting industry. Lorem
+          Ipsum has been the industry's standard dummy text ever since the
+          1500s, when an unknown printer took a galley of type and scrambled it
+          to make a type specimen book. It has survived not only five centuries,
+          but a/p>
+        </p>
+      </div>
+      <div class="background about_circle"></div>
+    </div>
+
+    <!-- My Projectss -->
+    <div class="projects">
+      <h1 id="work_header">MEET MY WORKS</h1>
+      <div class=" project" id="p1">
+        <div class="prog_image_frame">
+          <div class="background project1_circle"></div>
+          <div class="foreground proj_pic "></div>
+          <br style="clear:both;" />
+        </div>
+        <div class="foreground project1_text">
+          <h3>CHIP8</h3>
+          <p>
+            This was a project I worked on with 6 people to develop an emulator
+            that executed CHIP-8 games on Google Chrome within 4 months. We used
+            HTML/CSS, JavaScript and GitHub during the project. I was
+            responsible for the user interface and specifically worked on
+            creating a development environment to make CHIP-8 games targeted
+            towards new users.
+          </p>
+          <button
+            type="button"
+            class="btn btn-primary"
+            id="p1_button"
+            onclick="location.href='project_1.html'"
+            ;
+          >
+            LEARN MORE
+          </button>
+        </div>
+
+        <br style="clear:both;" />
+      </div>
+      <div class="project" id="p2">
+        <div class="prog_image_frame">
+          <div class="background project1_circle"></div>
+          <div class="foreground proj_pic "></div>
+        </div>
+        <div class="foreground project1_text">
+          <h3>CHIP8</h3>
+          <p>
+            is simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the industry's standard dummy text ever since the
+            1500s, when an unknown printer took a galley of type and scrambled
+            it to make a type specimen book. It has survived not only five it to
+            make a type specimen book. It has survived not only five it to make
+            a type specimen book. It has survived not only five centuries, but a
+          </p>
+          <button type="button" class="btn btn-primary" id="p1_button">
+            LEARN MORE
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="contacts">
+      <div class="background crop_circle">
+        <div class="contact_circle"></div>
+      </div>
+      <div class="all_info">
+        <h1 style="margin-left: 3%;">CONTACT ME</h1>
+        <div id="github">
+          <img src="logos/github.png" width="8%" />
+          <h4 style="display: inline-block; margin-left: 3%;">LDANGYO</h4>
+        </div>
+
+        <div id="linkedin">
+          <img src="logos/linkedin.png" width="9%" />
+          <h4 style="display: inline-block;  margin-left: 3%;">LDANGYO</h4>
+        </div>
+        <div id="email">
+          <img src="logos/email.png" width="10%" />
+          <h4 style="display: inline-block;  margin-left: 3%;">
+            LDANGNGU@SFU.CA
+          </h4>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
