@@ -33,6 +33,8 @@ h1 {
 h2 {
   color: #25408f;
   font-size: 3rem;
+  margin-bottom: 2%;
+  margin-top: 10%;
 }
 
 h3 {
@@ -56,17 +58,17 @@ p {
 
 /* PROJECT ------------------------------------------- */
 #work_header {
-  margin-left: 8.8%;
+  margin-left: 18.8%;
   margin-top: 2%;
   display: inline-block;
 }
 
 .project1_circle {
   position: absolute;
-  width: 445px;
-  height: 445px;
-  margin-top: -4%;
-  margin-left: 3%;
+  width: 619px;
+  height: 619px;
+  margin-top: -10%;
+  margin-left: -5%;
   margin-bottom: 3%;
   overflow: hidden;
   border-radius: 50%;
@@ -95,9 +97,9 @@ p {
 }
 
 .proj_pic {
-  width: 442.63px;
-  height: 315.68px;
-  margin-left: 30%;
+  width: 576px;
+  height: 388.68px;
+  margin-left: 22%;
   margin-top: 2%;
   background: #000000;
   display: inline-block;
@@ -107,6 +109,26 @@ p {
   margin-left: 8.8%;
   margin-top: 9%;
   max-width: 67%;
+}
+
+.all_challenges {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#challenge1 {
+  margin-left: 10%;
+  margin-right: 5%;
+}
+#challenge2 {
+  margin-right: 6%;
+}
+
+#sketch_img {
+  float: left;
+  margin-left: 20%;
+  margin-top: -5%;
+  position: absolute;
 }
 
 .foreground {
