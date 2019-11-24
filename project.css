@@ -108,6 +108,15 @@ p {
   border: 0.6rem solid #a7a7a7;
 }
 
+.proj_pic2 {
+  width: 576px;
+  height: 388.68px;
+  margin-left: 22%;
+  margin-top: 2%;
+
+  display: inline-block;
+}
+
 .project_description {
   margin-left: 8.8%;
   margin-top: 9%;
@@ -161,4 +170,65 @@ p {
 
 .background {
   z-index: -1;
+}
+
+/* contacts ------------------------------------------- */
+.contact_circle {
+  height: 49.02vw;
+  width: 55.07vw;
+  margin-top: 120px;
+  margin-left: -202px;
+  min-width: 500px;
+  min-height: 490px;
+  border-radius: 50%;
+  background-color: #fe938c;
+  position: relative;
+  display: inline-block;
+}
+
+.all_info {
+  display: inline-block;
+  margin-left: 30%;
+  margin-top: 8.5%;
+}
+
+.crop_circle {
+  overflow: hidden;
+  max-height: 504px;
+  position: absolute;
+  display: inline-block;
+}
+
+.contacts {
+  margin-top: 10%;
+}
+
+#github {
+  margin-left: 15%;
+  margin-top: 2%;
+  display: inline-block;
+}
+
+#linkedin {
+  margin-left: 20%;
+  margin-top: 1%;
+}
+
+#email {
+  margin-left: 24%;
+  margin-top: 2%;
+}
+
+.bottom_nav {
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
+.nav_link_bottom {
+  margin-right: 4%;
+}
+
+.nav_link_bottom:hover {
+  color: #25408f;
+  text-decoration: none;
 }
