@@ -40,6 +40,7 @@ h2 {
 h3 {
   color: #fe938c;
   font-size: 2rem;
+  margin-bottom: 1%;
 }
 
 h4 {
@@ -50,6 +51,7 @@ h4 {
 p {
   font-weight: normal;
   color: #84898f;
+  margin-bottom: 4%;
 }
 
 #clearfix {
@@ -101,8 +103,9 @@ p {
   height: 388.68px;
   margin-left: 22%;
   margin-top: 2%;
-  background: #000000;
+
   display: inline-block;
+  border: 0.6rem solid #a7a7a7;
 }
 
 .project_description {
@@ -126,9 +129,29 @@ p {
 
 #sketch_img {
   float: left;
-  margin-left: 20%;
-  margin-top: -5%;
+  margin-left: -106%;
+  margin-top: 35%;
   position: absolute;
+}
+
+#second_proto_img {
+  margin-left: 10%;
+}
+
+#proto2div {
+  margin-top: 20%;
+}
+
+#finalprojdiv {
+  margin-top: 10%;
+}
+
+#final_proj_img {
+  border: 0.65rem solid #a7a7a7;
+}
+
+#palette_img {
+  margin-top: 15%;
 }
 
 .foreground {
