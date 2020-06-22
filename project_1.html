@@ -2,8 +2,6 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="css/main.css" /> -->
-    <!-- <link rel="icon" href="images/B.png" type="image/png" sizes="any" />  PUT IN LOGO -->
     <title>Lina Dang-Nguyen</title>
 
     <!-- Boostrap CSS -->
@@ -13,40 +11,34 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="project.css" />
   </head>
 
   <body style="background-color:#F7F3EC;" id="clearfix">
-    <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg mb-3 forground">
-      <a class="navbar-brand mr-auto p-2 " href="index.html"
-        ><img src="logos/logo-02.png" width="8%"
-      /></a>
-
-      <div class="nav-item p-2 flex-row-reverse">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html#about_me"
-              >ABOUT <span class="sr-only">(current)</span></a
-            >
+    <!--Navbar -->
+    <nav class="mb-1 fixed-top  navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">
+        <img src="logos/logo-02.png" height="35vw" />
+      </a>
+      <button class="navbar-toggler custom-togger" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon custom-togger"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about_me">ABOUT</a>
           </li>
-        </ul>
-      </div>
-      <div class="nav-item p-2 flex-row-reverse">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html#projects"
-              >WORKS <span class="sr-only">(current)</span></a
-            >
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">WORKS</a>
           </li>
-        </ul>
-      </div>
-      <div class="nav-item p-2 flex-row-reverse">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html#contacts"
-              >CONTACT <span class="sr-only">(current)</span></a
-            >
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#contacts">CONTACT</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#contacts">RESUME</a>
           </li>
         </ul>
       </div>
@@ -102,7 +94,7 @@
       </div>
     </div>
     <div class="project_description">
-      <div>
+      <div class="project_section">
         <h2>WHAT IS CHIP8?</h2>
         <p>
           Chip 8 is a language developed by Joseph Weisbecker in 1976 to easily
@@ -112,7 +104,7 @@
           Toe, Blitz and Ping Pong.
         </p>
       </div>
-      <div>
+      <div class="project_section">
         <h2>INITIAL CHALLENGES</h2>
         <div class="all_challenges">
           <img src="images/challenge1.png" width="18%" id="challenge1" />
@@ -121,7 +113,7 @@
         </div>
       </div>
 
-      <div>
+      <div class="project_section">
         <h2>PROTOTYPE</h2>
         <div class="row">
           <div class="col-sm-4" style="z-index: 1;">
@@ -189,7 +181,7 @@
         </div>
       </div>
 
-      <div>
+      <div class="project_section">
         <h2>REFLECTION</h2>
         <p>
           We were able to successfully implement all our planned features.
@@ -231,42 +223,27 @@
       </div>
     </div>
     <!-- Contact -->
-    <div style="margin-top: 10%;">
-      <div class="background crop_circle">
+    <div class="contacts" id="contacts">
+      <div class="background contacts_circle_wrapper">
         <div class="contact_circle"></div>
       </div>
       <div class="all_info">
-        <h1 style="margin-left: 3%;">CONTACT ME</h1>
-        <div id="github">
-          <img src="logos/github.png" width="8%" />
-          <h4 style="display: inline-block; margin-left: 3%;">LDANGYO</h4>
+        <h1 class="contact_header">CONTACT ME</h1>
+        <div class="github">
+          <img src="logos/github.png" class="logo" />
+          <h4 class="github_text">LDANGYO</h4>
         </div>
-
-        <div id="linkedin">
-          <img src="logos/linkedin.png" width="9%" />
-          <h4 style="display: inline-block;  margin-left: 3%;">LDANGYO</h4>
+    
+        <div class="linkedin">
+          <img src="logos/linkedin.png" class="logo" />
+          <h4 class="linkedin_text">LDANGYO</h4>
         </div>
-        <div id="email">
-          <img src="logos/email.png" width="10%" />
-          <h4 style="display: inline-block;  margin-left: 3%;">
+        <div class="email">
+          <img src="logos/email.png" class="logo" />
+          <h4 class="email_text">
             LINANGUYEN8@HOTMAIL.COM
           </h4>
         </div>
-      </div>
-      <div class="bottom_nav">
-        <a class="nav_link_bottom" href="index.html"
-          ><img src="logos/logo-02.png" width="4%"
-        /></a>
-
-        <a class="nav_link_bottom" href="index.html#about_me"
-          >ABOUT <span class="sr-only">(current)</span></a
-        >
-        <a class="nav_link_bottom" href="index.html#projects"
-          >WORKS <span class="sr-only">(current)</span></a
-        >
-        <a class="nav_link_bottom" href="index.html#contacts"
-          >CONTACT <span class="sr-only">(current)</span></a
-        >
       </div>
     </div>
   </body>

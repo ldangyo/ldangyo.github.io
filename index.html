@@ -2,8 +2,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="css/main.css" /> -->
-    <!-- <link rel="icon" href="images/B.png" type="image/png" sizes="any" />  PUT IN LOGO -->
+    <link rel="stylesheet" href="./main.css" />
     <title>Lina Dang-Nguyen</title>
 
     <!-- Boostrap CSS -->
@@ -17,36 +16,30 @@
   </head>
 
   <body style="background-color:#F7F3EC;" id="clearfix">
-    <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg mb-3 forground">
-      <a class="navbar-brand mr-auto p-2 " href="#"
-        ><img src="logos/logo-02.png" width="8%"
-      /></a>
+    <script src="./main.js"></script>
 
-      <div class="nav-item p-2 flex-row-reverse">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#about_me"
-              >ABOUT <span class="sr-only">(current)</span></a
-            >
+    <!--Navbar -->
+    <nav class="mb-1 fixed-top  navbar navbar-expand-lg navbar-light" id="navbar">
+      <a class="navbar-brand" href="#">
+        <img src="logos/logo-02.png" height="35vw" />
+      </a>
+      <button class="navbar-toggler custom-togger" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+        aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon custom-togger"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about_me">ABOUT</a>
           </li>
-        </ul>
-      </div>
-      <div class="nav-item p-2 flex-row-reverse">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#projects"
-              >WORKS <span class="sr-only">(current)</span></a
-            >
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">WORKS</a>
           </li>
-        </ul>
-      </div>
-      <div class="nav-item p-2 flex-row-reverse">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#contacts"
-              >CONTACT <span class="sr-only">(current)</span></a
-            >
+          <li class="nav-item dropdown">
+              <a class="nav-link" href="#contacts">CONTACT</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#contacts">RESUME</a>
           </li>
         </ul>
       </div>
@@ -54,14 +47,16 @@
 
     <!-- Front Page -->
     <div class="front_page">
-      <div class="foreground greetings">
+      <div class="greetings">
         <h1 style="font-weight: bolder;">HI I'M LINA</h1>
       </div>
-      <div class="foreground greetings_2">
+      <div class="greetings_2">
         <h2>I'M A&nbsp</h2>
         <div class="fill_underline">WEB DEVELOPER</div>
       </div>
-      <div class="background main_circle"></div>
+      <div class="circle_wrapper">
+        <div class="background main_circle"></div>
+      </div>
     </div>
 
     <!-- About Me -->
@@ -86,18 +81,18 @@
           interfaces.
         </p>
       </div>
-      <div class="background about_circle"></div>
+      <div class="background about_circle_wrapper">
+        <div class="background about_circle"></div>
+      </div>
     </div>
 
-    <!-- My Projectss -->
+    <!-- My Projects -->
     <div class="projects" id="projects">
       <h1 id="work_header">MEET MY WORKS</h1>
       <div class=" project" id="p1">
         <div class="prog_image_frame">
           <div class="background project1_circle"></div>
-
-          <img src="images/border_title_pic.png" class="proj_pic foreground" />
-
+          <img src="images/ezgif.com-crop.gif" class="proj_pic foreground" />
           <br style="clear:both;" />
         </div>
         <div class="foreground project1_text">
@@ -155,23 +150,23 @@
 
     <!-- Contact -->
     <div class="contacts" id="contacts">
-      <div class="background crop_circle">
+      <div class="background contacts_circle_wrapper">
         <div class="contact_circle"></div>
       </div>
       <div class="all_info">
-        <h1 style="margin-left: 3%;">CONTACT ME</h1>
-        <div id="github">
-          <img src="logos/github.png" width="8%" />
-          <h4 style="display: inline-block; margin-left: 3%;">LDANGYO</h4>
+        <h1 class="contact_header">CONTACT ME</h1>
+        <div class="github">
+          <img src="logos/github.png" class="logo" />
+          <h4 class="github_text">LDANGYO</h4>
         </div>
 
-        <div id="linkedin">
-          <img src="logos/linkedin.png" width="9%" />
-          <h4 style="display: inline-block;  margin-left: 3%;">LDANGYO</h4>
+        <div class="linkedin">
+          <img src="logos/linkedin.png" class="logo"/>
+          <h4 class="linkedin_text">LDANGYO</h4>
         </div>
-        <div id="email">
-          <img src="logos/email.png" width="10%" />
-          <h4 style="display: inline-block;  margin-left: 3%;">
+        <div class="email">
+          <img src="logos/email.png" class="logo" />
+          <h4 class="email_text">
             LINANGUYEN8@HOTMAIL.COM
           </h4>
         </div>

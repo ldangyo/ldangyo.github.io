@@ -1,9 +1,9 @@
-a {
+/* a {
   color: #5f666e;
-}
+} */
 
 a:hover {
-  color: #fe938c;
+  color: #25408f !important ;
 }
 
 html,
@@ -23,37 +23,34 @@ p {
 
 h1 {
   color: #25408f;
-  font-size: 4.375rem;
+  font-size: 5vw;
 }
 
 h2 {
   color: #25408f;
-  font-size: 3rem;
+  font-size: 3.5vw;
 }
 
 h3 {
   color: #fe938c;
-  font-size: 2.4rem;
+  font-size: 2.5vw;
 }
 
 h4 {
   color: #fe938c;
-  font-size: 1.4rem;
+  font-size: 1.5vw;
 }
 
 p {
-  font-weight: normal;
+  font-size: 1.09vw;
   color: #84898f;
-}
-
-#clearfix {
-  overflow: scroll;
 }
 
 .btn,
 .btn-primary {
   background-color: #fe938c;
   border-color: #fe938c;
+  font-size: 1.5vw;
 }
 
 .btn-primary:hover,
@@ -69,31 +66,45 @@ p {
 }
 
 /* MAIN PAGE ------------------------------------------- */
-#nav {
-  z-index: 1;
+
+#navbar {
+  position: fixed; /* Make it stick/fixed */
+  top: 0; /* Stay on top */
+  width: 100%; /* Full width */
+  background-color: transparent;
+  transition: top 0.2s, background 0.3s; /* Transition effect when sliding down (and up) */
+}
+
+.front_page {
+  width: 100vh;
+}
+
+.circle_wrapper {
+  position: absolute;
+  top: -25vw;
+  left: -32vw;
+  z-index: -1;
 }
 
 .main_circle {
-  height: 1114px;
-  width: 80.07vw;
-  min-width: 853px;
-  top: -240px;
-  left: -532px;
+  min-height: 75vw;
+  min-width: 75vw;
   border-radius: 50%;
   background-color: #fe938c;
-  position: absolute;
 }
 
 .greetings {
-  margin-left: 38vw;
-  margin-top: 12%;
+  width: 100%;
+  margin-left: 37.5vw;
+  margin-top: 9vw;
 }
 
 .greetings_2 {
-  margin-top: 15%;
+  margin-top: 20vw;
   margin-left: 51.3vw;
   display: flex;
   flex-flow: row wrap;
+  width: 100%;
 }
 
 .fill_underline {
@@ -101,39 +112,43 @@ p {
   text-decoration-line: underline;
   text-decoration-color: #25408f;
   color: #fe938c;
-  font-size: 3rem;
-  line-height: 3.8rem;
+  font-size: 3.5vw;
+  line-height: 4.3vw;
 }
 
 /* ABOUT ME ------------------------------------------- */
 .about_me {
   display: block;
-  margin-top: 21.8%;
-  margin-left: 37.8%;
-  margin-bottom: 10%;
-  width: 80.07vw;
+  margin-top: 21.8vw;
+  margin-left: 37.8vw;
+  margin-bottom: 10vw;
 }
 
 .about_heading {
-  margin-bottom: 5%;
+  margin-bottom: 5vw;
 }
+
 .about_circle {
-  width: 556px;
-  height: 556px;
-  left: 994px;
-  top: 830px;
+  width: 37vw;
+  height: 37vw;
   border-radius: 50%;
   background-color: #fe938c;
+}
+
+.about_circle_wrapper{
+  left: 72vw;
+  top: 54vw;
   position: absolute;
+  width: 28vw;
   overflow: hidden;
 }
 
 .mission_description {
-  max-width: 38%;
+  max-width: 35vw;
 }
 
 .whatIdo_description {
-  max-width: 45%;
+  max-width: 37vw;
 }
 
 /* PROJECT ------------------------------------------- */
@@ -144,8 +159,8 @@ p {
 
 .project1_circle {
   position: absolute;
-  width: 365px;
-  height: 365px;
+  width: 26.796vw;
+  height: 26.796vw;
   margin-top: -4%;
   margin-left: 3%;
   margin-bottom: 3%;
@@ -155,19 +170,16 @@ p {
 }
 
 .prog_image_frame {
-  float: left;
-  display: relative;
   margin-top: 1%;
 }
 
 .project1_text {
   margin-left: 12%;
   margin-top: 1%;
-  max-width: 35%;
-  display: inline-block;
+  max-width: 39vw;
 }
 .project {
-  display: inline-block;
+  display: flex;
 }
 
 #p2 {
@@ -176,22 +188,23 @@ p {
 }
 
 .proj_pic {
-  width: 372.63px;
-  height: 255.68px;
+  width: 25.503vw;
+  height: 17.49vw;
   margin-left: 30%;
   margin-top: 2%;
   background: #000000;
   display: inline-block;
+  border: 1vw solid lightgrey;
 }
 
 /* contacts ------------------------------------------- */
 .contact_circle {
   height: 49.02vw;
   width: 55.07vw;
-  margin-top: 120px;
-  margin-left: -202px;
-  min-width: 500px;
-  min-height: 490px;
+  margin-top: 11.111vw;
+  margin-left: -18.704vw;
+  min-width: 46.296vw;
+  min-height: 45.370vw;
   border-radius: 50%;
   background-color: #fe938c;
   position: relative;
@@ -200,37 +213,79 @@ p {
 
 .all_info {
   display: inline-block;
-  margin-left: 30%;
-  margin-top: 8.5%;
+  margin-left: 30vw;
+  margin-top: 5.5vw;
+  width: 100%;
 }
 
-.crop_circle {
+.contacts_circle_wrapper {
   overflow: hidden;
-  max-height: 504px;
+  height: 40vw;
   position: absolute;
   display: inline-block;
 }
 
 .contacts {
   margin-top: 10%;
+  width: 100vh;
 }
 
-#github {
-  margin-left: 15%;
-  margin-top: 2%;
+.contact_header {
+  width: 100%;
+}
+
+.github {
+  display: flex;
+  align-items: center;
+  margin-left: 4vw;
+  margin-top: 1vw;
+}
+
+.github_logo {
+  width: 6vw;
+}
+
+.github_text {
   display: inline-block;
+  margin-left: 3vw;
+  justify-content: center;
+  align-items: center;
 }
 
-#linkedin {
-  margin-left: 20%;
-  margin-top: 1%;
+.linkedin {
+  margin-left: 7vw;
+  margin-top: 1vw;
+  width: 100%;
 }
 
-#email {
-  margin-left: 24%;
-  margin-top: 2%;
+.linkedin_logo {
+  width: 6vw;
 }
 
+.linkedin_text {
+  display: inline-block;
+  margin-left: 3vw;
+}
+
+.logo {
+  width: 6vw;
+}
+
+.email {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 10vw;
+  margin-top: 1vw;
+}
+
+.email_logo {
+  width: 6vw;
+}
+
+.email_text {
+  margin-left: 3vw;
+}
 .foreground {
   position: relative;
   z-index: 0;
@@ -239,3 +294,11 @@ p {
 .background {
   z-index: -1;
 }
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(255,102,203);
+} 
